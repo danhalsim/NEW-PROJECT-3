@@ -3,19 +3,16 @@ function Header() {
     <nav>
       <ul>
         <li>
-          <strong>Todo List</strong>
+          <strong>📒 Task Tracker</strong>
         </li>
       </ul>
       <ul>
         <li>
-          <a href="#">Link</a>
-        </li>
-        <li>
-          <a href="#">Link</a>
+          <a href="#">Log in</a>
         </li>
         <li>
           <a href="#" role="button">
-            Button
+            Sign up
           </a>
         </li>
       </ul>

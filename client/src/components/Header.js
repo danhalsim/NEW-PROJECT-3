@@ -11,9 +11,7 @@ function Header() {
           <a href="#">Log in</a>
         </li>
         <li>
-          <a href="#" role="button">
-            Sign up
-          </a>
+          <a href="#">Sign Up</a>
         </li>
       </ul>
     </nav>

@@ -10,7 +10,7 @@ function App() {
     const savedTasks = localStorage.getItem("tasks");
 
     // check if savedTasks has a value
-    // if yes, parse it
+    // if yes, parse and return it
     // if not, return an empty array
     return savedTasks ? JSON.parse(savedTasks) : [];
   });
@@ -20,16 +20,20 @@ function App() {
     localStorage.setItem("tasks", JSON.stringify(tasks));
   }, [tasks]);
 
+  // create a new task with the timestamp as the id
   function createTask(content) {
     const newTask = {
       id: Date.now(),
       content,
     };
 
+    // add new task to the tasks array
     setTasks([...tasks, newTask]);
   }
 
+  // delete a task based on its id
   function deleteTask(id) {
+    // filter by keeping tasks only with id that does not match the given id
     const updatedTasks = tasks.filter((task) => task.id !== id);
     setTasks(updatedTasks);
   }

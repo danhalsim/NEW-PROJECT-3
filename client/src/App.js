@@ -5,7 +5,12 @@ import TaskList from "./components/TaskList";
 
 function App() {
   const [tasks, setTasks] = useState(() => {
+    // get tasks saved in local storage
     const savedTasks = localStorage.getItem("tasks");
+
+    // check if savedTasks has a value
+    // if yes, parse it
+    // if not, return an empty array
     return savedTasks ? JSON.parse(savedTasks) : [];
   });
 

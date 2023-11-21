@@ -6,7 +6,7 @@
 
 A simple task creator app.
 
-Note: Deployment on Heroku is currently not working.
+https://danhalsim-task-tracker-f178c0efda88.herokuapp.com/
 
 ![screenshot](./assets/screenshot.png)
 

@@ -1,17 +1,18 @@
-import React, { useState } from 'react';
+import React, { useState } from "react";
 
-function Form({createTask}) {
+function Form({ createTask }) {
   // initialize content as as empty string
-  const [content, setContent] = useState('');
+  const [content, setContent] = useState("");
 
   function handleSubmit(e) {
     e.preventDefault();
 
     // call the createTask function in App.js
+    // pass in value of content
     createTask(content);
 
     // reset the input field to empty
-    setContent('');
+    setContent("");
   }
 
   return (

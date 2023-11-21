@@ -12,6 +12,7 @@ https://danhalsim-task-tracker-f178c0efda88.herokuapp.com/
 
 ## Table of Contents
 
+- [Technologies](#technologies)
 - [Installation](#installation)
 - [Usage](#usage)
 - [Credits](#credits)
@@ -20,17 +21,29 @@ https://danhalsim-task-tracker-f178c0efda88.herokuapp.com/
 - [Tests](#Tests)
 - [Questions](#Questions)
 
+## Technologies
+
+- React
+- Node
+- Express
+- Pico CSS
+
 ## Installation
 
-N/A
+Open the website. Create your tasks.
 
 ## Usage
 
-Enter text into the text box. Click "create" to add a new task. Click "delete" to delete the task.
+Enter your task into the text box. Click "create" to add the new task. Click "delete" to delete the task.
 
 ## Credits
 
+- Code With Sahand tutorial video for React component file structure
+  - https://www.youtube.com/watch?v=alYtYAFDVaA
 
+- UCI coding bootcamp class repository for server.js template
+
+- AskBCS for help with debugging
 
 ## License
 

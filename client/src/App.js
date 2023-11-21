@@ -1,13 +1,30 @@
-import Form from "./components/Form";
+import React, { useState } from "react";
 import Header from "./components/Header";
-import Task from "./components/Task";
+import Form from "./components/Form";
+import TaskList from "./components/TaskList";
 
 function App() {
+  const [tasks, setTasks] = useState([]);
+
+  function createTask(content) {
+    const newTask = {
+      id: Date.now(),
+      content,
+    };
+
+    setTasks([...tasks, newTask]);
+  };
+
+  function deleteTask(id) {
+    const updatedTasks = tasks.filter((task) => task.id !== id);
+    setTasks(updatedTasks);
+  };
+
   return (
     <div class="container">
       <Header />
-      <Form />
-      <Task />
+      <Form createTask={createTask} />
+      <TaskList tasks={tasks} deleteTask={deleteTask} />
     </div>
   );
 }

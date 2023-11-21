@@ -1,5 +1,7 @@
 function Footer() {
-  return <a href="#">danhalsim</a>;
+  return (
+    <footer>danhalsim</footer>
+  )
 }
 
 export default Footer;

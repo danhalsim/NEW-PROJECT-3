@@ -1,12 +1,25 @@
-function Form() {
+import React, { useState } from 'react';
+
+function Form({createTask}) {
+  const [content, setContent] = useState('');
+
+  function handleSubmit(e) {
+    e.preventDefault();
+
+    createTask(content);
+    setContent('');
+  }
+
   return (
-    <form>
+    <form onSubmit={handleSubmit}>
       <input
         type="text"
         id="task"
         name="task"
         placeholder="New task"
         required
+        value={content}
+        onChange={(e) => setContent(e.target.value)}
       ></input>
 
       <button type="submit">Create</button>

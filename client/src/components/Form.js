@@ -14,8 +14,6 @@ function Form({createTask}) {
     <form onSubmit={handleSubmit}>
       <input
         type="text"
-        id="task"
-        name="task"
         placeholder="New task"
         required
         value={content}

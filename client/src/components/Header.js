@@ -8,10 +8,9 @@ function Header() {
       </ul>
       <ul>
         <li>
-          <a href="#">Log in</a>
-        </li>
-        <li>
-          <a href="#">Sign Up</a>
+          <a href="https://github.com/danhalsim/Task-Tracker" target="_blank">
+            GitHub
+          </a>
         </li>
       </ul>
     </nav>
